@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Розкладання на прості дроби</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Розкладання на прості дроби</h1>
+        <p>Метод інтегрування раціональних функцій</p>
+
+        <button id="themeToggle">
+            Змінити тему
+        </button>
+
+    </header>
+
+
+    <div class="container">
+
+        <nav>
+
+            <h1>Меню</h1>
+
+            <ul>
+
+                <li><a href="../index.html">Головна</a></li>
+
+                <h3>Диференціювання</h3>
+
+                <li><a href="power-rule.html">Правило степеня</a></li>
+                <li><a href="product-rule.html">Правило добутку</a></li>
+                <li><a href="chain-rule.html">Правило складеної функції</a></li>
+
+            </ul>
+
+            <ul>
+
+                <h3>Інтегрування</h3>
+
+                <li><a href="substitution.html">Заміна змінної</a></li>
+                <li><a href="integration-by-parts.html">Інтегрування частинами</a></li>
+                <li><a href="partial-fractions.html" class="active">Розкладання на прості дроби</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <main>
+
+            <div class="box">
+
+                <h2>Що таке розкладання на прості дроби?</h2>
+
+                <p>
+                    <b>Розкладання на прості дроби</b> —
+                    це метод, який дозволяє представити
+                    складний дріб як суму простіших дробів.
+                </p>
+
+                <p>
+                    Це значно полегшує обчислення інтегралів
+                    раціональних функцій.
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Як це працює?</h2>
+
+                <p>
+                    Ми розкладаємо дріб на суму дробів
+                    простішого вигляду.
+                </p>
+
+                <p>
+                    Наприклад:
+                </p>
+
+                <p>
+                    <b>1 / (x(x+1)) = A/x + B/(x+1)</b>
+                </p>
+
+                <p>
+                    Далі знаходимо коефіцієнти A і B.
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Коли застосовувати?</h2>
+
+                <p>
+                    Метод використовується для
+                    <b>раціональних функцій</b>,
+                    тобто дробів виду:
+                </p>
+
+                <p>
+                    <b>P(x) / Q(x)</b>
+                </p>
+
+                <p>
+                    де P і Q — многочлени.
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Приклади</h2>
+
+                <p>
+                    <b>∫ 1/(x(x+1)) dx</b>
+                </p>
+
+                <p>
+                    <b>∫ (2x+3)/(x²+x) dx</b>
+                </p>
+
+                <p>
+                    <b>∫ 1/(x²-1) dx</b>
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer>
+
+        <p>© Навчальний проєкт від Мельника Владислава</p>
+        <h3>Джерела</h3>
+        <p><a href="https://yukhym.com/uk/diferentsiyuvannya-funktsij/geometrichnij-zmist-pokhidnoji-dotichna-ta-normal-do-krivoji.html">Геометричний зміст похідної</a></p>
+        <p><a href="https://myedu.cc/school-mathematics/viznachenij-integral-ta-jogo-vlastivosti/">Геометричний зміст інтеграла та його властивості</a></p>
+        <p><a href="https://www.mathscribbles.com/product-page/book-of-integrals">Book of Integrals Мігеля Сантьяго</a></p>
+    
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

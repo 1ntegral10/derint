@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заміна змінної</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Заміна змінної</h1>
+        <button id="themeToggle">
+            Змінити тему
+        </button>
+
+    </header>
+
+
+    <div class="container">
+
+        <nav>
+
+            <h1>Меню</h1>
+
+            <ul>
+
+                <li><a href="../index.html">Головна</a></li>
+
+                <h3>Диференціювання</h3>
+
+                <li><a href="power-rule.html">Правило степеня</a></li>
+                <li><a href="product-rule.html">Правило добутку</a></li>
+                <li><a href="chain-rule.html">Правило складеної функції</a></li>
+
+            </ul>
+
+            <ul>
+
+                <h3>Інтегрування</h3>
+
+                <li><a href="substitution.html" class="active">Заміна змінної</a></li>
+                <li><a href="integration-by-parts.html">Інтегрування частинами</a></li>
+                <li><a href="partial-fractions.html">Розкладання на прості дроби</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <main>
+
+            <div class="box">
+
+                <h2>Що таке заміна змінної?</h2>
+
+                <p>
+                    <b>Заміна змінної</b> — це метод інтегрування,
+                    який дозволяє спростити складний інтеграл,
+                    ввівши нову змінну.
+                </p>
+
+                <p>
+                    Ідея полягає в тому, щоб замінити частину виразу
+                    на нову змінну <b>t</b>,
+                    і звести інтеграл до простішого вигляду.
+                </p>
+
+                <p>
+                    Формально:
+                </p>
+
+                <p>
+                    <b>∫ f(g(x))·g'(x) dx = ∫ f(t) dt</b>
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Як це працює?</h2>
+
+                <p>
+                    <b>1.</b> вводимо нову змінну: t = g(x)
+                </p>
+
+                <p>
+                    <b>2.</b> знаходимо dt = g'(x) dx
+                </p>
+
+                <p>
+                    <b>3.</b> підставляємо в інтеграл
+                </p>
+
+                <p>
+                    <b>4.</b> інтегруємо простіший вираз
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Коли застосовувати?</h2>
+
+                <p>
+                    Метод працює, коли в інтегралі є
+                    <i>функція і її похідна</i>.
+                </p>
+
+                <p>
+                    Наприклад:
+                </p>
+
+                <p>
+                    <b>(x² + 1) і 2x</b>
+                </p>
+
+                <p>
+                    Тут зручно зробити заміну:
+                    <b>t = x² + 1</b>
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="box">
+
+                <h2>Приклади</h2>
+
+                <p>
+                    <b>∫ 2x·(x² + 1) dx → t = x² + 1 → ∫ t dt</b>
+                </p>
+
+                <p>
+                    <b>∫ cos(x²)·2x dx → t = x² → ∫ cos(t) dt</b>
+                </p>
+
+                <p>
+                    <b>∫ e^(3x)·3 dx → t = 3x → ∫ e^t dt</b>
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+
+        <p>© Навчальний проєкт від Мельника Владислава</p>
+        <h3>Джерела</h3>
+        <p><a href="https://yukhym.com/uk/diferentsiyuvannya-funktsij/geometrichnij-zmist-pokhidnoji-dotichna-ta-normal-do-krivoji.html">Геометричний зміст похідної</a></p>
+        <p><a href="https://myedu.cc/school-mathematics/viznachenij-integral-ta-jogo-vlastivosti/">Геометричний зміст інтеграла та його властивості</a></p>
+        <p><a href="https://www.mathscribbles.com/product-page/book-of-integrals">Book of Integrals Мігеля Сантьяго</a></p>
+    
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
